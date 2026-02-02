@@ -1,0 +1,30 @@
+# OS / Editor
+.DS_Store
+Thumbs.db
+.vscode/
+*.swp
+
+# Node
+node_modules/
+.next/
+out/
+npm-debug.log*
+pnpm-debug.log*
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.venv/
+env/
+venv/
+
+# Env
+.env
+.env.*
+!.env.example
+!.env.local.example
+
+# Misc
+*.log
