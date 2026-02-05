@@ -22,9 +22,16 @@ docker compose up -d
 ## 2) API setup + run
 ```powershell
 cd apps\api
+```
+
+### First time setup:
+```
 poetry install
 copy .env.example .env
 poetry run alembic upgrade head
+```
+
+### Run:
 poetry run uvicorn app.main:app --reload --port 8000
 ```
 
@@ -33,10 +40,16 @@ Test:
 
 ## 3) Web setup + run
 In a new terminal:
+
+### First time setup:
 ```powershell
 cd apps\web
 pnpm install
 copy .env.local.example .env.local
+```
+
+### Run:
+```
 pnpm dev
 ```
 
