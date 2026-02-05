@@ -32,6 +32,7 @@ poetry run alembic upgrade head
 ```
 
 ### Run:
+```
 poetry run uvicorn app.main:app --reload --port 8000
 ```
 
